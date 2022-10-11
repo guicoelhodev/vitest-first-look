@@ -1,10 +1,10 @@
 import "./style.scss";
-import { Counter } from "../components/Counter";
+import { CounterComponent } from "../components/Counter/counter";
 
 export const App = () => {
   return (
     <div className="app">
-      <Counter />
+      <CounterComponent />
     </div>
   );
 };
