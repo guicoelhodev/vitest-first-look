@@ -5,12 +5,7 @@ import { CounterComponent } from "..";
 
 describe("Counter component test", () => {
   it("should initialize with title", () => {
-    // render(<CounterComponent/>,)
-
-    // expect(screen.getByText('title')).toBeInTheDocument()
-    it("should render the input", () => {
-      render(<CounterComponent />);
-      expect(screen.getByText("fgfgfgddfg")).toBeInTheDocument();
-    });
+    render(<CounterComponent />);
+    expect(screen.getByText("title")).toBeInTheDocument();
   });
 });
