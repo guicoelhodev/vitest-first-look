@@ -1,5 +1,5 @@
 import "./style.scss";
-import { CounterComponent } from "../components/Counter/counter";
+import { CounterComponent } from "../components/Counter";
 
 export const App = () => {
   return (
