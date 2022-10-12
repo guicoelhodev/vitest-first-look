@@ -35,7 +35,7 @@ export const ListName: React.FC = () => {
         {nameList ? (
           nameList.map((item) => <li key={item.id}>{item.name}</li>)
         ) : (
-          <aside className={S.emptyList}>
+          <aside className={S.emptyList} title="emptyAdvice">
             Lista se encontra vazia, adicione novos nomes!
           </aside>
         )}
