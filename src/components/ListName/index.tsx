@@ -35,7 +35,7 @@ export const ListName: React.FC = () => {
         {nameList ? (
           nameList.map((item) => <li key={item.id}>{item.name}</li>)
         ) : (
-          <aside className={S.emptyList} title="emptyAdvice">
+          <aside className={S.emptyList} aria-label="emptyAdvice">
             Lista se encontra vazia, adicione novos nomes!
           </aside>
         )}
@@ -48,11 +48,13 @@ export const ListName: React.FC = () => {
             placeholder="Ex Guilherme Coelho"
             id="input-name"
             ref={nameRef}
+            aria-label="input-name"
           />
         </article>
         <button
           className={S.btnAdd}
           onClick={() => handleAddUser(nameRef.current!.value)}
+          aria-label="button-addName"
         >
           Adicionar
         </button>
